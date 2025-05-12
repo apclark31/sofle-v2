@@ -15,6 +15,13 @@
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4  // Right-hand keys.
 #define THUMBS LH2 LH1 LH0 RH0 RH1 RH2                                      // Thumb keys.
 
+
+#define BASE 0
+#define NAV 1
+#define NUM 2
+#define FN 3
+#define SYM 4
+
 / {
     behaviors {
         hml: hml {
@@ -39,14 +46,6 @@
             hold-trigger-on-release;
         };
     };
-
-#define BASE 0
-#define NAV 1
-#define NUM 2
-#define FN 3
-#define SYM 4
-
-/ {
     
 
     keymap {
@@ -72,7 +71,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        lower_layer {
+        nav_layer {
             label = "nav";
             bindings = <
 // ╭───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────╮                                              ╭───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────╮
@@ -92,7 +91,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        raise_layer {
+        num_layer {
             label = "num";
             bindings = <
 // ╭───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────╮                                              ╭───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────╮
@@ -112,7 +111,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        adjust_layer {
+        fn_layer {
             label = "fn";
             bindings = <
 // ╭───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────╮                                              ╭───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────╮
@@ -132,7 +131,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-         adjust_layer {
+         sym_layer {
             label = "sym";
             bindings = <
 // ╭───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────╮                                              ╭───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────╮
