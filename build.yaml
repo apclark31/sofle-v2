@@ -16,11 +16,10 @@ include:
   - board: nice_nano_v2
     shield: sofle_left
     snippet: studio-rpc-usb-uart
-    cmake-args: "-DZMK_CONFIG_INCLUDE_PATH=/__w/sofle-v2/sofle-v2/config/zmk-helpers/include"
-
+    cmake-args: "-DZMK_CONFIG_INCLUDE_PATH=../config/zmk-helpers/include/zmk-helpers" 
   - board: nice_nano_v2
     shield: sofle_right
-    cmake-args: "-DZMK_CONFIG_INCLUDE_PATH=/__w/sofle-v2/sofle-v2/config/zmk-helpers/include"
+    cmake-args: "-DZMK_CONFIG_INCLUDE_PATH=../config/zmk-helpers/include/zmk-helpers"
 
   - board: nice_nano_v2
     shield: settings_reset
