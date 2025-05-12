@@ -1,7 +1,9 @@
+name: ZMK Build
+
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config-matrix.yml@main
     with:
       matrix-path: config/build.yaml
