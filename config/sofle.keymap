@@ -23,7 +23,7 @@
 #define SYM 4
 
 / {
-    behaviors 
+    behaviors {
         kp: behavior_kp {
             compatible = "zmk,behavior-key-press";
         };
