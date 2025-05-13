@@ -33,7 +33,6 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
-            bindings = <&kp LCTRL &kp A>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
         };
         
@@ -47,7 +46,6 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
-            bindings = <&kp LALT &kp S>;
             hold-trigger-key-positions = <KEYS_R THUMBS>; // Timeless
             // hold-trigger-on-release;
         };
@@ -61,7 +59,6 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
-            bindings = <&kp LGUI &kp D>;
             hold-trigger-key-positions = <KEYS_R THUMBS>; // Timeless
             // hold-trigger-on-release;
         };
@@ -75,7 +72,6 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
-            bindings = <&kp LSHFT &kp F>;
             hold-trigger-key-positions = <KEYS_R THUMBS>; // Timeless
             // hold-trigger-on-release;
         };
@@ -91,7 +87,6 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
-            bindings = <&kp RSHFT &kp J>;
             hold-trigger-key-positions = <KEYS_L THUMBS>; // Timeless
             // hold-trigger-on-release;
         };
@@ -105,7 +100,6 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
-            bindings = <&kp RGUI &kp K>;
             hold-trigger-key-positions = <KEYS_L THUMBS>; // Timeless
             // hold-trigger-on-release;
         };
@@ -119,7 +113,6 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
-            bindings = <&kp RALT &kp L>;
             hold-trigger-key-positions = <KEYS_L THUMBS>; // Timeless
             // hold-trigger-on-release;
         };
@@ -133,7 +126,6 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
-            bindings = <&kp RCTRL &kp SEMI>;
             hold-trigger-key-positions = <KEYS_L THUMBS>; // Timeless
             // hold-trigger-on-release;
         }; 
