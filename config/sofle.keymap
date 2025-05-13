@@ -27,7 +27,7 @@
         // --- Left Hand Home Row Mods ---
 
         // A: LCTRL on hold, A on tap
-        hm_a_lctrl: behavior_hm_a_lctrl {
+        /*hm_a_lctrl: behavior_hm_a_lctrl {
             compatible = "zmk,behavior-hold-tap";
             label = "HM_A_LCTRL";
             #binding-cells = <2>;
@@ -38,7 +38,7 @@
             bindings = <&kp LCTRL &kp A>;
             hold-trigger-key-positions = <>; // Timeless
             // hold-trigger-on-release; // Optional with timeless
-        };
+        }; */
         // S: LALT on hold, S on tap
         hm_s_lalt: behavior_hm_s_lalt {
             compatible = "zmk,behavior-hold-tap";
@@ -53,7 +53,7 @@
             // hold-trigger-on-release;
         };
 
-        // D: LGUI on hold, D on tap
+       /* // D: LGUI on hold, D on tap
         hm_d_lgui: behavior_hm_d_lgui {
             compatible = "zmk,behavior-hold-tap";
             label = "HM_D_LGUI";
@@ -244,5 +244,5 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-    };
+    }; */
 };
