@@ -25,7 +25,18 @@
 / {
     behaviors {
         // --- Left Hand Home Row Mods ---
-
+        hm_a_lctrl: behavior_hm_a_lctrl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_A_LCTRL";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            bindings = <&kp LCTRL &kp A>;
+            hold-trigger-key-positions = <>;
+        };
+        
     
         // S: LALT on hold, S on tap
         hm_s_lalt: behavior_hm_s_lalt {
