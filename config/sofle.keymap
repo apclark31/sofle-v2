@@ -137,9 +137,9 @@
             bindings = <&kp RCTRL &kp SEMI>; // CORRECTED BINDING
             hold-trigger-key-positions = <>; // Timeless
             // hold-trigger-on-release;
-        }; 
+        }; */
 
-    }; // End of behaviors block */
+    }; // End of behaviors block 
     
     /* keymap {
         compatible = "zmk,keymap";
