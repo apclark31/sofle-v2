@@ -2,7 +2,7 @@
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
- */
+ */ 
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -30,7 +30,7 @@
         hm_a_lctrl: behavior_hm_a_lctrl {
             compatible = "zmk,behavior-hold-tap";
             label = "HM_A_LCTRL";
-            //#binding-cells = <2>;
+            #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>; // Optional with ZMK_KEYPOS_NONE
@@ -39,9 +39,8 @@
             hold-trigger-key-positions = <>; // Timeless
             // hold-trigger-on-release; // Optional with timeless
         };
-
         // S: LALT on hold, S on tap
-        hm_s_lalt: behavior_hm_s_lalt {
+      /* hm_s_lalt: behavior_hm_s_lalt {
             compatible = "zmk,behavior-hold-tap";
             label = "HM_S_LALT";
             #binding-cells = <2>;
@@ -138,8 +137,7 @@
             bindings = <&kp RCTRL &kp SEMI>; // CORRECTED BINDING
             hold-trigger-key-positions = <>; // Timeless
             // hold-trigger-on-release;
-        };
-
+        }; 
 
     }; // End of behaviors block
     
@@ -246,5 +244,5 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-    };
+    };*/
 };
