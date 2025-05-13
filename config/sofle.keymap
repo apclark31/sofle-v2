@@ -40,7 +40,7 @@
             // hold-trigger-on-release; // Optional with timeless
         };
         // S: LALT on hold, S on tap
-      /* hm_s_lalt: behavior_hm_s_lalt {
+        hm_s_lalt: behavior_hm_s_lalt {
             compatible = "zmk,behavior-hold-tap";
             label = "HM_S_LALT";
             #binding-cells = <2>;
@@ -244,5 +244,5 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-    };*/
+    };
 };
