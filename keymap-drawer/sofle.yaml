@@ -1,66 +1,8 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  base:
-  - ESC
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - DELETE
-  - TAB
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - BSPC
-  - LGUI
-  - {t: ▽, type: trans}
-  - '&hm_s_lalt'
-  - '&hm_d_lgui'
-  - '&hm_f_lshft'
-  - G
-  - H
-  - '&hm_j_rshft'
-  - '&hm_k_rgui'
-  - '&hm_l_ralt'
-  - '&hm_semi_rctrl'
-  - ''''
-  - LSHFT
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - MUTE
-  - ''
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - RSHFT
-  - LGUI
-  - LALT
-  - LCTRL
-  - nav
-  - RET
-  - SPACE
-  - fn
-  - RCTRL
-  - RALT
-  - RGUI
+  base: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, TAB, Q, W, E, R, T, Y, U, I, O, P, BSPC, LGUI, '&hm_a_lctrl', '&hm_s_lalt', '&hm_d_lgui',
+    '&hm_f_lshft', G, H, '&hm_j_rshft', '&hm_k_rgui', '&hm_l_ralt', '&hm_semi_rctrl', '''', LSHFT, Z, X, C, V, B, MUTE, '', N, M, ',', ., /, RSHFT, LGUI, LALT, LCTRL,
+    nav, RET, SPACE, fn, RCTRL, RALT, RGUI]
   nav:
   - ESC
   - '1'
