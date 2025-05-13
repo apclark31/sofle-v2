@@ -33,7 +33,6 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
-            bindings = <&kp LCTRL &kp A>;
             hold-trigger-key-positions = <>;
         };
         
@@ -47,7 +46,6 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
-            bindings = <&kp LALT &kp S>;
             hold-trigger-key-positions = <>; // Timeless
             // hold-trigger-on-release;
         };
@@ -61,7 +59,6 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
-            bindings = <&kp LGUI>, <&kp D>;
             hold-trigger-key-positions = <>; // Timeless
             // hold-trigger-on-release;
         };
@@ -75,7 +72,6 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
-            bindings = <&kp LSHFT>, <&kp F>;
             hold-trigger-key-positions = <>; // Timeless
             // hold-trigger-on-release;
         };
@@ -91,7 +87,6 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
-            bindings = <&kp RSHFT>, <&kp J>; // CORRECTED BINDING
             hold-trigger-key-positions = <>; // Timeless
             // hold-trigger-on-release;
         };
@@ -105,7 +100,6 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
-            bindings = <&kp RGUI>, <&kp K>; // CORRECTED BINDING
             hold-trigger-key-positions = <>; // Timeless
             // hold-trigger-on-release;
         };
@@ -119,7 +113,6 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
-            bindings = <&kp RALT>, <&kp L>; // CORRECTED BINDING
             hold-trigger-key-positions = <>; // Timeless
             // hold-trigger-on-release;
         };
@@ -133,7 +126,6 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
-            bindings = <&kp RCTRL>, <&kp SEMI>; // CORRECTED BINDING
             hold-trigger-key-positions = <>; // Timeless
             // hold-trigger-on-release;
         }; 
@@ -151,7 +143,7 @@
 // ├───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┤                                              ├───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┤
     &kp TAB             &kp Q               &kp W               &kp E               &kp R               &kp T                                                              &kp Y               &kp U               &kp I               &kp O               &kp P               &kp BSPC
 // ├───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┤                                              ├───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┤
-    &kp LGUI            &hm_a_lctrl        &hm_s_lalt          &hm_d_lgui          &hm_f_lshft               &kp G                                                        &kp H               &hm_j_rshft         &hm_k_rgui          &hm_l_ralt          &hm_semi_rctrl      &kp SQT
+    &kp LGUI           &hm_a_lctrl LCTRL A &hm_s_lalt LALT S    &hm_d_lgui LGUI D   &hm_f_lshft lshft F &kp G                                                        &kp H                    &hm_j_rshft RSHFT J &hm_k_rgui RGUI K    &hm_l_ralt RALT L   &hm_semi_rctrl  RCTRL SEMI    &kp SQT
 // ╭───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────╮      ╭───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────╮
     &kp LSHFT           &kp Z               &kp X               &kp C               &kp V               &kp B               &kp C_MUTE                 &none               &kp N               &kp M               &kp COMMA           &kp DOT             &kp FSLH            &kp RSHFT
 // ╰───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────╯      ╰───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────╯
