@@ -35,7 +35,7 @@
            // quick-tap-ms = <175>;
            // require-prior-idle-ms = <150>; // Optional with ZMK_KEYPOS_NONE
            // flavor = "balanced"; // Or "tap-preferred"
-           // bindings = <&kp LCTRL &kp A>;
+             bindings = <&kp LCTRL &kp A>;
            // hold-trigger-key-positions = <>; // Timeless
             // hold-trigger-on-release; // Optional with timeless
         };
