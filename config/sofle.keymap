@@ -24,28 +24,123 @@
 
 / {
     behaviors {
-        hml: hml {
+        // --- Left Hand Home Row Mods ---
+
+        // A: LCTRL on hold, A on tap
+        hm_a_lctrl: behavior_hm_a_lctrl {
             compatible = "zmk,behavior-hold-tap";
-            flavor = "balanced";
+            label = "HM_A_LCTRL";
+            #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
-            bindings = <&kp A>, <&kp S>, <&kp D>, <&kp F>, <&kp Z>;
-            hold-trigger-key-positions = <LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4 RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4 LH2 LH1 LH0 RH0 RH1 RH2>;
-            hold-trigger-on-release;
+            require-prior-idle-ms = <150>; // Optional with ZMK_KEYPOS_NONE
+            flavor = "balanced"; // Or "tap-preferred"
+            bindings = <&kp LCTRL>, <&kp A>;
+            hold-trigger-key-positions = <ZMK_KEYPOS_NONE>; // Timeless
+            // hold-trigger-on-release; // Optional with timeless
         };
 
-        hmr: hmr {
+        // S: LALT on hold, S on tap
+        hm_s_lalt: behavior_hm_s_lalt {
             compatible = "zmk,behavior-hold-tap";
-            flavor = "balanced";
+            label = "HM_S_LALT";
+            #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
-            bindings = <&kp J>, <&kp K>, <&kp L>, <&kp SEMI>, <&kp FSLH>;
-            hold-trigger-key-positions = <LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4 RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4 LH2 LH1 LH0 RH0 RH1 RH2>;
-            hold-trigger-on-release;
+            flavor = "balanced";
+            bindings = <&kp LALT>, <&kp S>;
+            hold-trigger-key-positions = <ZMK_KEYPOS_NONE>; // Timeless
+            // hold-trigger-on-release;
         };
-    };
+
+        // D: LGUI on hold, D on tap
+        hm_d_lgui: behavior_hm_d_lgui {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_D_LGUI";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            bindings = <&kp LGUI>, <&kp D>;
+            hold-trigger-key-positions = <ZMK_KEYPOS_NONE>; // Timeless
+            // hold-trigger-on-release;
+        };
+
+        // F: LSHFT on hold, F on tap
+        hm_f_lshft: behavior_hm_f_lshft {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_F_LSHFT";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            bindings = <&kp LSHFT>, <&kp F>;
+            hold-trigger-key-positions = <ZMK_KEYPOS_NONE>; // Timeless
+            // hold-trigger-on-release;
+        };
+
+        // --- Right Hand Home Row Mods (Mirrored) ---
+
+        // J: RCTRL on hold, J on tap
+        hm_j_rctrl: behavior_hm_j_rctrl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_J_RCTRL";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            bindings = <&kp RCTRL>, <&kp J>; // Mirrored from A (LCTRL)
+            hold-trigger-key-positions = <ZMK_KEYPOS_NONE>; // Timeless
+            // hold-trigger-on-release;
+        };
+
+        // K: RALT on hold, K on tap
+        hm_k_ralt: behavior_hm_k_ralt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_K_RALT";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            bindings = <&kp RALT>, <&kp K>; // Mirrored from S (LALT)
+            hold-trigger-key-positions = <ZMK_KEYPOS_NONE>; // Timeless
+            // hold-trigger-on-release;
+        };
+
+        // L: RGUI on hold, L on tap
+        hm_l_rgui: behavior_hm_l_rgui {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_L_RGUI";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            bindings = <&kp RGUI>, <&kp L>; // Mirrored from D (LGUI)
+            hold-trigger-key-positions = <ZMK_KEYPOS_NONE>; // Timeless
+            // hold-trigger-on-release;
+        };
+
+        // SEMI: RSHFT on hold, SEMI on tap
+        hm_semi_rshft: behavior_hm_semi_rshft {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_SEMI_RSHFT";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            bindings = <&kp RSHFT>, <&kp SEMI>; // Mirrored from F (LSHFT)
+            hold-trigger-key-positions = <ZMK_KEYPOS_NONE>; // Timeless
+            // hold-trigger-on-release;
+        };
+
+    }; // End of behaviors block
     
 
     keymap {
@@ -65,7 +160,7 @@
 // ╰───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────╯      ╰───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────╯
                    
 //                     ╭───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────╮                                              ╭───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────╮
-                        &kp LGUI            &kp LALT            &kp LCTRL           &mo LOWER           &kp RET                                                            &kp SPACE             &mo RAISE         &kp RCTRL           &kp RALT            &kp RGUI
+                        &kp LGUI            &kp LALT            &kp LCTRL           &mo NAV             &kp RET                                                            &kp SPACE             &mo RAISE         &kp RCTRL           &kp RALT            &kp RGUI
 //                     ╰───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────╯                                              ╰───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────╯
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
