@@ -33,7 +33,7 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
-            bindings = <&kp LCTRL>, <&kp A>;
+            bindings = <&kp LCTRL &kp A>;
             hold-trigger-key-positions = <>;
         };
         
@@ -47,7 +47,7 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
-            bindings = <&kp LALT>, <&kp S>;
+            bindings = <&kp LALT &kp S>;
             hold-trigger-key-positions = <>; // Timeless
             // hold-trigger-on-release;
         };
