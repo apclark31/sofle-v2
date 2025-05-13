@@ -26,16 +26,16 @@ layers:
   - P
   - BSPC
   - LGUI
-  - {t: A A, h: LCTRL LCTRL}
-  - {t: S S, h: LALT LALT}
-  - {t: D D, h: LGUI LGUI}
-  - {t: F F, h: LSHFT LSHFT}
+  - {t: A, h: LCTRL}
+  - {t: S, h: LALT}
+  - {t: D, h: LGUI}
+  - {t: F, h: LSHFT}
   - G
   - H
-  - {t: J J, h: RSHFT RSHFT}
-  - {t: K K, h: RGUI RGUI}
-  - {t: L L, h: RALT RALT}
-  - {t: SEMI SEMI, h: RCTRL RCTRL}
+  - {t: J, h: RSHFT}
+  - {t: K, h: RGUI}
+  - {t: L, h: RALT}
+  - {t: ;, h: RCTRL}
   - ''''
   - LSHFT
   - Z
