@@ -245,10 +245,10 @@ layers:
   - RALT
   - RGUI
   sym:
-  - ESC
-  - '1'
-  - '2'
-  - '3'
+  - BT CLR
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
   - '4'
   - '5'
   - '6'
@@ -258,39 +258,39 @@ layers:
   - '0'
   - DELETE
   - TAB
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
+  - '`'
+  - <
+  - '>'
+  - '-'
+  - '|'
+  - ^
+  - '['
+  - ']'
+  - $
+  - _
   - BSPC
   - LGUI
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
+  - '!'
+  - ''''
+  - /
+  - '='
+  - '&'
+  - '#'
+  - (
+  - )
+  - ;
   - ;
   - ''''
   - LSHFT
-  - {t: Z, type: held}
-  - X
+  - {t: '~', type: held}
+  - +
   - C
   - V
   - B
-  - MUTE
-  - ''
-  - N
-  - M
+  - '&bootloader'
+  - '&bootloader'
+  - '@'
+  - ':'
   - ','
   - .
   - /
