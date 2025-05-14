@@ -38,7 +38,7 @@ layers:
   - {t: ;, h: RCTRL}
   - ''''
   - LSHFT
-  - Z
+  - {t: Z, h: sym}
   - X
   - C
   - V
@@ -49,13 +49,13 @@ layers:
   - M
   - ','
   - .
-  - /
+  - {t: FS, h: sym}
   - RSHFT
   - LGUI
   - LALT
   - LCTRL
   - nav
-  - RET
+  - {t: RET, h: num}
   - SPACE
   - fn
   - RCTRL
@@ -81,16 +81,16 @@ layers:
   - R
   - T
   - Y
-  - U
+  - PG UP
   - UP
-  - O
+  - PG DN
   - P
   - BSPC
   - LGUI
-  - A
-  - S
-  - D
-  - F
+  - LCTRL
+  - LALT
+  - LGUI
+  - LSHFT
   - G
   - H
   - LEFT
@@ -177,7 +177,7 @@ layers:
   - LALT
   - LCTRL
   - {t: ▽, type: trans}
-  - RET
+  - {t: RET, type: held}
   - SPACE
   - '0'
   - RCTRL
@@ -197,10 +197,10 @@ layers:
   - '0'
   - DELETE
   - TAB
-  - Q
-  - W
-  - E
-  - R
+  - F9
+  - F10
+  - F11
+  - F12
   - T
   - Y
   - U
@@ -209,10 +209,10 @@ layers:
   - P
   - BSPC
   - LGUI
-  - A
-  - S
-  - D
-  - F
+  - F5
+  - F6
+  - F7
+  - F8
   - G
   - H
   - J
@@ -221,10 +221,10 @@ layers:
   - ;
   - ''''
   - LSHFT
-  - Z
-  - X
-  - C
-  - V
+  - F1
+  - F2
+  - F3
+  - F4
   - B
   - MUTE
   - ''
@@ -282,7 +282,7 @@ layers:
   - ;
   - ''''
   - LSHFT
-  - Z
+  - {t: Z, type: held}
   - X
   - C
   - V
