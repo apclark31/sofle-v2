@@ -49,7 +49,7 @@ layers:
   - M
   - ','
   - .
-  - {t: FS, h: sym}
+  - {t: /, h: sym}
   - RSHFT
   - LGUI
   - LALT
