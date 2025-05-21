@@ -11,8 +11,8 @@
 #include <dt-bindings/zmk/rgb.h>
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/key-labels/sofle.h"
-#define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4  // Left-hand keys.
-#define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4  // Right-hand keys.
+#define KEYS_L LT0 LT1 LT2 LT3 LT4 LT5 LM0 LM1 LM2 LM3 LM4 LM5 LB0 LB1 LB2 LB3 LB4 LB5  // Left-hand keys.
+#define KEYS_R RT0 RT1 RT2 RT3 RT4 RT5 RM0 RM1 RM2 RM3 RM4 RM5 RB0 RB1 RB2 RB3 RB4 RB5 // Right-hand keys.
 #define THUMBS LH2 LH1 LH0 RH0 RH1 RH2                                      // Thumb keys.
 
 
@@ -31,7 +31,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <130>;
             bindings= <&kp>, <&kp>;
             flavor = "balanced";
             hold-trigger-key-positions = <KEYS_R THUMBS>;
@@ -45,7 +45,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <130>;
             bindings= <&kp>, <&kp>;
             flavor = "balanced";
             hold-trigger-key-positions = <KEYS_R THUMBS>; // Timeless
@@ -59,7 +59,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <130>;
             bindings= <&kp>, <&kp>;
             flavor = "balanced";
             hold-trigger-key-positions = <KEYS_R THUMBS>; // Timeless
@@ -73,7 +73,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <130>;
             bindings= <&kp>, <&kp>;
             flavor = "balanced";
             hold-trigger-key-positions = <KEYS_R THUMBS>; // Timeless
@@ -86,12 +86,25 @@
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <130>;
             bindings= <&mo>, <&kp>;
             flavor = "balanced";
-            hold-trigger-key-positions = <KEYS_L THUMBS>; // Timeless
+            hold-trigger-key-positions = <KEYS_R THUMBS>; // Timeless
             // hold-trigger-on-release;
-        }; 
+        };
+
+        // q on tap, Hyper on hold
+        hm_q_hyper: behavior_hm_q_hyper {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_Q_HYPER";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <130>;
+            flavor = "balanced";
+            bindings = <&kp q>, <&mo HYPER>; // define HYPER as a macro below
+        hold-trigger-key-positions = <KEYS_R THUMBS>;
+};
 
 // --- Right Hand Home Row Mods (Corrected Symmetrical Mapping) ---
 
@@ -102,7 +115,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <130>;
             bindings= <&kp>, <&kp>;
             flavor = "balanced";
             hold-trigger-key-positions = <KEYS_L THUMBS>; // Timeless
@@ -116,7 +129,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <130>;
             bindings= <&kp>, <&kp>;
             flavor = "balanced";
             hold-trigger-key-positions = <KEYS_L THUMBS>; // Timeless
@@ -130,7 +143,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <130>;
             bindings= <&kp>, <&kp>;
             flavor = "balanced";
             hold-trigger-key-positions = <KEYS_L THUMBS>; // Timeless
@@ -144,7 +157,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <130>;
             bindings= <&kp>, <&kp>;
             flavor = "balanced";
             hold-trigger-key-positions = <KEYS_L THUMBS>; // Timeless
@@ -157,14 +170,36 @@
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <130>;
             bindings= <&mo>, <&kp>;
             flavor = "balanced";
             hold-trigger-key-positions = <KEYS_L THUMBS>; // Timeless
             // hold-trigger-on-release;
         }; 
+                // P on tap, Hyper on hold
+        hm_p_hyper: behavior_hm_p_hyper {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_P_HYPER";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <130>;
+            flavor = "balanced";
+            bindings = <&kp q>, <&mo HYPER>; // define HYPER as a macro below
+            hold-trigger-key-positions = <KEYS_L THUMBS>;
+            };
 
     }; // End of behaviors block 
+
+/ {
+    macros {
+        hyper: macro_hyper {
+            compatible = "zmk,behavior-macro";
+            label = "HYPER";
+            bindings = <&kp LC(LS(LA(LG(KC_NO))))>; // This simulates Hyper
+        };
+    };
+};
     
      keymap {
         compatible = "zmk,keymap";
@@ -175,7 +210,7 @@
 // ╭───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────╮                                              ╭───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────╮
     &kp ESC             &kp N1              &kp N2              &kp N3              &kp N4              &kp N5                                                             &kp N6              &kp N7              &kp N8              &kp N9              &kp N0              &kp DELETE       
 // ├───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┤                                              ├───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┤
-    &kp TAB             &kp Q               &kp W               &kp E               &kp R               &kp T                                                              &kp Y               &kp U               &kp I               &kp O               &kp P               &kp BSPC
+    &kp TAB             &hm_q_hyper Q HYPER &kp W               &kp E               &kp R               &kp T                                                              &kp Y               &kp U               &kp I               &kp O               &hm_p_hyper P HYPER &kp BSPC
 // ├───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┤                                              ├───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┤
     &kp LGUI            &hm_a_lctrl LCTRL A &hm_s_lalt LALT S    &hm_d_lgui LGUI D   &hm_f_lshft LSHFT F &kp G                                                              &kp H               &hm_j_rshft RSHFT J &hm_k_rgui RGUI K    &hm_l_ralt RALT L  &hm_semi_rctrl RCTRL SEMI    &kp SQT
 // ╭───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────╮      ╭───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────╮
