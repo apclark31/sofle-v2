@@ -102,7 +102,7 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <130>;
             flavor = "balanced";
-            bindings = <&kp>, <&macro_hyper>; // define HYPER as a macro below
+            bindings = <&kp>, <&kp>; // define HYPER as a macro below
             hold-trigger-key-positions = <KEYS_R THUMBS>;
         };
 
@@ -185,7 +185,7 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <130>;
             flavor = "balanced";
-            bindings = <&kp>, <&macro_hyper>; // define HYPER as a macro below
+            bindings = <&kp>, <&kp>; // define HYPER as a macro below
             hold-trigger-key-positions = <KEYS_L THUMBS>;
         };
 
