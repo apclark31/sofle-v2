@@ -103,7 +103,7 @@
             require-prior-idle-ms = <130>;
             flavor = "balanced";
             bindings = <&kp>, <&macro_hyper>; // define HYPER as a macro below
-        hold-trigger-key-positions = <KEYS_R THUMBS>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>;
         };
 
 // --- Right Hand Home Row Mods (Corrected Symmetrical Mapping) ---
