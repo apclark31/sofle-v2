@@ -14,7 +14,7 @@ layers:
   - '0'
   - DELETE
   - TAB
-  - {t: '&mo HYPER HYPER', h: q Q}
+  - Q
   - W
   - E
   - R
@@ -23,7 +23,7 @@ layers:
   - U
   - I
   - O
-  - {t: '&mo HYPER HYPER', h: q P}
+  - P
   - BSPC
   - LGUI
   - {t: A, h: LCTRL}
