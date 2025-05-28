@@ -264,8 +264,8 @@ layers:
   - '-'
   - '|'
   - ^
-  - '['
-  - ']'
+  - '{'
+  - '}'
   - $
   - _
   - BSPC
@@ -284,8 +284,8 @@ layers:
   - LSHFT
   - {t: '~', type: held}
   - +
-  - C
-  - V
+  - '['
+  - ']'
   - B
   - '&bootloader'
   - '&bootloader'
