@@ -279,14 +279,14 @@ layers:
   - (
   - )
   - ;
-  - ;
+  - \
   - ''''
   - LSHFT
   - {t: '~', type: held}
   - +
   - '['
   - ']'
-  - B
+  - '%'
   - '&bootloader'
   - '&bootloader'
   - '@'
