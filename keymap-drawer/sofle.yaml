@@ -53,7 +53,7 @@ layers:
   - RSHFT
   - LGUI
   - LALT
-  - '&kmt LC(LS(LALT) LCTRL'
+  - '&kmt LC(LS(LALT)) LCTRL'
   - nav
   - {t: RET, h: num}
   - SPACE
