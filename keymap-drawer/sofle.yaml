@@ -53,12 +53,12 @@ layers:
   - RSHFT
   - LGUI
   - LALT
-  - {t: LCTRL, h: Ctl+Sft+LALT}
+  - Ctl+Sft+LALT
   - nav
   - {t: RET, h: num}
   - SPACE
   - fn
-  - RCTRL
+  - Ctl+Sft+LALT
   - RALT
   - RGUI
   nav:
