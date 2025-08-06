@@ -35,6 +35,7 @@
             bindings= <&kp>, <&kp>;
             flavor = "balanced";
             hold-trigger-key-positions = <KEYS_R THUMBS>;
+            hold-trigger-on-release;
         };
         
     
@@ -49,7 +50,7 @@
             bindings= <&kp>, <&kp>;
             flavor = "balanced";
             hold-trigger-key-positions = <KEYS_R THUMBS>; // Timeless
-            // hold-trigger-on-release;
+            hold-trigger-on-release;
         };
 
         // D: LGUI on hold, D on tap
@@ -63,7 +64,7 @@
             bindings= <&kp>, <&kp>;
             flavor = "balanced";
             hold-trigger-key-positions = <KEYS_R THUMBS>; // Timeless
-            // hold-trigger-on-release;
+            hold-trigger-on-release;
         };
 
         // F: LSHFT on hold, F on tap
@@ -77,7 +78,7 @@
             bindings= <&kp>, <&kp>;
             flavor = "balanced";
             hold-trigger-key-positions = <KEYS_R THUMBS>; // Timeless
-            // hold-trigger-on-release;
+            hold-trigger-on-release;
         };
         // Z on tap, sym layer on hold
         hm_z_sym: behavior_hm_z_sym { // Renamed node and label
@@ -90,7 +91,7 @@
             bindings= <&mo>, <&kp>;
             flavor = "balanced";
             hold-trigger-key-positions = <KEYS_R THUMBS>; // Timeless
-            // hold-trigger-on-release;
+            hold-trigger-on-release;
         };
 
 /*        // q on tap, Hyper on hold
@@ -119,7 +120,7 @@
             bindings= <&kp>, <&kp>;
             flavor = "balanced";
             hold-trigger-key-positions = <KEYS_L THUMBS>; // Timeless
-            // hold-trigger-on-release;
+            hold-trigger-on-release;
         };
 
         // K: RGUI on hold, K on tap (Mirrors D:LGUI)
@@ -133,7 +134,7 @@
             bindings= <&kp>, <&kp>;
             flavor = "balanced";
             hold-trigger-key-positions = <KEYS_L THUMBS>; // Timeless
-            // hold-trigger-on-release;
+            hold-trigger-on-release;
         };
 
         // L: RALT on hold, L on tap (Mirrors S:LALT)
@@ -147,7 +148,7 @@
             bindings= <&kp>, <&kp>;
             flavor = "balanced";
             hold-trigger-key-positions = <KEYS_L THUMBS>; // Timeless
-            // hold-trigger-on-release;
+            hold-trigger-on-release;
         };
 
         // SEMI: RCTRL on hold, SEMI on tap (Mirrors A:LCTRL)
@@ -161,7 +162,7 @@
             bindings= <&kp>, <&kp>;
             flavor = "balanced";
             hold-trigger-key-positions = <KEYS_L THUMBS>; // Timeless
-            // hold-trigger-on-release;
+            hold-trigger-on-release;
         }; 
                 // FSLH on tap, sym layer on hold (Mirrors Z:SYM)
         hm_fslh_sym: behavior_hm_fslh_sym { // Renamed node and label
@@ -174,7 +175,7 @@
             bindings= <&mo>, <&kp>;
             flavor = "balanced";
             hold-trigger-key-positions = <KEYS_L THUMBS>; // Timeless
-            // hold-trigger-on-release;
+            hold-trigger-on-release;
         }; 
                 // P on tap, Hyper on hold
 /*        hm_p_hyper: behavior_hm_p_hyper {
@@ -218,7 +219,7 @@
 // ╰───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────╯      ╰───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────╯
                    
 //                     ╭───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────╮                                              ╭───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────╮
-                        &kp LGUI            &kp LALT            &mt LC(LS(LALT)) LCTRL           &mo NAV             &lt NUM RET                                                        &kp SPACE             &mo FN         &kp RCTRL           &kp RALT            &kp RGUI
+                        &kp LGUI            &kp LALT            &kp LC(LS(LALT))           &mo NAV             &lt NUM RET                                                        &kp SPACE             &mo FN         &kp LC(LS(LALT))           &kp RALT            &kp RGUI
 //                     ╰───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────╯                                              ╰───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────╯
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
